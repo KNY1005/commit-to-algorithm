@@ -1,4 +1,4 @@
-function solution(section) {
+function solution(decimal) {
 
     return decimal.toString(2);
 }  
