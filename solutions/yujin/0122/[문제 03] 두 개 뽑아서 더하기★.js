@@ -6,6 +6,7 @@ function solution(numbers) {
     }
   }
 
+  // 중복 제거
   const sorted_arr = [...new Set(answer)];
 
   return sorted_arr.sort((a, b) => a - b);
