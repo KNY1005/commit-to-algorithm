@@ -29,3 +29,5 @@ while (que.length) {
 }
 
 console.log(`<${result.join(', ')}>`);
+
+const queue = Array.from(queue.fill(1));
