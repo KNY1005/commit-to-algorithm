@@ -2,7 +2,15 @@ function solution(types, plays) {
   const answer = [];
 
   // gpt 도움 받음
+
   const music = types.reduce((acc, cur, index) => {});
+
+  const music = types.reduce((acc, cur, index) => {
+    // classic, pop이든 새로운 장르가 생긴다면, 배열 생성 (장르별 묶기 때문)
+    if (!acc[cur]) acc[cur] = [];
+    acc[cur].push({ id: index, play: plays[index] });
+  }, {});
+
 
   // 각 장르별 재생횟수 합계
   const totalSum = {};
